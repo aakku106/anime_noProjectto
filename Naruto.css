@@ -41,7 +41,7 @@ body {
   position: absolute;
   left: 5%;
   transform: translateX(-20%);
-  z-index: -1; /* Set a higher z-index to keep the logo above other elements */
+  z-index: 1; /* Set a higher z-index to keep the logo above other elements */
 }
 
 .navbar-logo {
@@ -67,4 +67,36 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background-color: #050505; /* color of the scrollbar track */
+}
+/* Style for navigation text */
+#navigation-text {
+  border: 1px solid red;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 20%;
+  position: absolute;
+  font-size: 30px; /* Set font size */
+  top: 20px;
+  font-weight: 1000;
+  z-index: 100;
+}
+.nav_about_naruto {
+  border: 1px solid blue;
+  margin: auto;
+  margin-top: 10%;
+}
+.nav_anime {
+  border: 1px silver solid;
+  margin-left: 80%;
+}
+.nav_manga {
+  border: 1px solid yellow;
+}
+.nav_contact {
+  border: 1px solid gainsboro;
+}
+.nav_link_to_back {
+  border: 1px solid green;
 }
