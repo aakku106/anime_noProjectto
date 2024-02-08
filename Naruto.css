@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: rgb(236, 149, 48); */
+  background: #d57e12;
+  color: white !important;
+  margin: 0; /* Remove default body margin */
+  height: 150vh;
+  /* border: 2px solid red; */
+}
+
+#menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1; /* Set a higher z-index to keep the button above other elements */
+}
+
+.menu-icon {
+  width: 80px;
+  height: 80px;
+  z-index: +200;
+  display: block;
+}
+
+#opened-image {
+  display: none;
+  margin-left: 8%;
+  z-index: +100;
+  margin-top: -2%;
+}
+
+.logo-container {
+  top: 10px;
+  position: absolute;
+  left: 5%;
+  transform: translateX(-20%);
+  z-index: -1; /* Set a higher z-index to keep the logo above other elements */
+}
+
+.navbar-logo {
+  width: 300px;
+  height: 200px;
+  border-radius: 0%;
+}
+#menu-btn-close {
+  display: none;
+}
+body.active {
+  overflow: hidden;
+}
+/* Define scrollbar styles */
+body::-webkit-scrollbar {
+  width: 5px; /* width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #cf672b; /* color of the scrollbar thumb */
+  border-radius: 70%; /* roundness of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #050505; /* color of the scrollbar track */
+}
