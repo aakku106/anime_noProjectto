@@ -1,0 +1,49 @@
+body {
+  background-color: #3f1114;
+}
+#space {
+  margin-top: 7px;
+  background-color: #dfd765 !important ;
+}
+/* #carousel-section {
+    position: relative;
+  }
+  
+  #carouselExampleSlidesOnly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  } */
+/* Add this to your existing styles or in a separate stylesheet */
+@keyframes blink {
+  100% {
+    opacity: 0;
+    color: red;
+    background-color: wheat;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+/* Add this to your existing styles or in a separate stylesheet */
+.color-change {
+  transition: color 0.5s ease-in-out;
+}
+
+.color-change:hover {
+  color: red; /* Change to the desired color */
+}
+
+/* Add this to your existing styles or in a separate stylesheet */
+.combined-effect {
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.combined-effect:hover {
+  color: black; /* Change to the desired color */
+  transform: scale(1.3); /* Change to the desired scale factor */
+}
