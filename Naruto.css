@@ -31,7 +31,7 @@ body {
 
 #opened-image {
   display: none;
-  margin-left: 8%;
+  margin-left: 9%;
   z-index: +100;
   margin-top: -2%;
 }
@@ -71,7 +71,7 @@ body::-webkit-scrollbar-track {
 /* Style for navigation text */
 #navigation-text {
   display: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: white;
   margin: auto;
   width: 80%;
@@ -89,22 +89,37 @@ body::-webkit-scrollbar-track {
   display: contents;
 }
 .nav_about_naruto {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color: white;
   margin-top: 5%;
   width: fit-content;
   margin-left: 20%;
 }
 .nav_anime {
-  border: 1px silver solid;
+  color: white;
+  /* border: 1px silver solid; */
+  margin-top: 3%;
+  width: fit-content;
   margin-left: 80%;
 }
 .nav_manga {
-  border: 1px solid yellow;
+  color: white;
+  /* border: 1px solid yellow; */
+  margin-top: 3%;
+  width: fit-content;
+  margin-left: 50%;
 }
 .nav_contact {
-  border: 1px solid gainsboro;
+  color: white;
+  /* border: 1px solid gainsboro; */
+  margin-top: 5%;
+  width: fit-content;
+  margin-left: 20%;
 }
 .nav_link_to_back {
-  border: 1px solid green;
+  color: white;
+  /* border: 1px solid green; */
+  margin-left: 70%;
+  width: fit-content;
+  margin-top: 18%;
 }
