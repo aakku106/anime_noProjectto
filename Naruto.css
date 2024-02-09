@@ -70,7 +70,9 @@ body::-webkit-scrollbar-track {
 }
 /* Style for navigation text */
 #navigation-text {
+  display: none;
   border: 1px solid red;
+  color: white;
   margin: auto;
   width: 80%;
   height: 80%;
@@ -81,11 +83,17 @@ body::-webkit-scrollbar-track {
   top: 20px;
   font-weight: 1000;
   z-index: 100;
+  border-bottom-left-radius: 55%;
+}
+#navigation-text:hover {
+  display: contents;
 }
 .nav_about_naruto {
   border: 1px solid blue;
-  margin: auto;
-  margin-top: 10%;
+  color: white;
+  margin-top: 5%;
+  width: fit-content;
+  margin-left: 20%;
 }
 .nav_anime {
   border: 1px silver solid;
