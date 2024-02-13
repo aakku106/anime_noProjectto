@@ -22,6 +22,11 @@ body {
   z-index: 1; /* Set a higher z-index to keep the button above other elements */
 }
 
+#menu-btn-close {
+  display: none;
+  /* position: fixed; */
+  /* z-index: 101 !important; Set a higher z-index than the opened image */
+}
 .menu-icon {
   width: 80px;
   height: 80px;
@@ -30,6 +35,7 @@ body {
 }
 
 #opened-image {
+  /* position: absolute; */
   display: none;
   margin-left: 9%;
   z-index: +100;
@@ -41,7 +47,7 @@ body {
   position: absolute;
   left: 5%;
   transform: translateX(-20%);
-  z-index: 1; /* Set a higher z-index to keep the logo above other elements */
+  z-index: -1; /*Set a higher z-index to keep the logo above other elements*/
 }
 
 .navbar-logo {
@@ -72,54 +78,58 @@ body::-webkit-scrollbar-track {
 #navigation-text {
   display: none;
   /* border: 1px solid red; */
+  border-top-right-radius: 30%;
   color: white;
-  margin: auto;
-  width: 80%;
-  height: 80%;
-  margin-top: 5%;
-  margin-left: 20%;
-  position: absolute;
-  font-size: 30px; /* Set font size */
-  top: 20px;
-  font-weight: 1000;
+  width: 100%;
+  height: 100vh; /* Set height to full viewport height */
+  margin: 0; /* Reset margin */
+  position: fixed; /* Change position to fixed */
+  font-size: 30px;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add background color with some transparency */
   z-index: 100;
-  border-bottom-left-radius: 55%;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
+  padding: 20px; /* Add padding */
 }
 #navigation-text:hover {
   display: contents;
 }
 .nav_about_naruto {
   /* border: 1px solid blue; */
-  color: white;
   margin-top: 5%;
   width: fit-content;
   margin-left: 20%;
 }
 .nav_anime {
-  color: white;
   /* border: 1px silver solid; */
-  margin-top: 3%;
+  margin-top: -3%;
   width: fit-content;
   margin-left: 80%;
 }
 .nav_manga {
-  color: white;
   /* border: 1px solid yellow; */
   margin-top: 3%;
   width: fit-content;
   margin-left: 50%;
 }
 .nav_contact {
-  color: white;
   /* border: 1px solid gainsboro; */
   margin-top: 5%;
   width: fit-content;
   margin-left: 20%;
 }
 .nav_link_to_back {
-  color: white;
   /* border: 1px solid green; */
-  margin-left: 70%;
+  margin-left: 76%;
   width: fit-content;
-  margin-top: 18%;
+  margin-top: 190% !important;
+}
+.nav_makup {
+  color: inherit;
 }
