@@ -1,14 +1,14 @@
 body {
-  background-color: grey !important;
+  background-color: #ffb2ec !important;
+  font-family: "Poppins", Arial;
 }
 
 .navcolorchange {
   background-color: rgba(13, 43, 13, 0.87) !important;
   height: 80px;
 }
-
-#topp {
-  background-image: url(https://i.pinimg.com/originals/ff/5f/08/ff5f08d68562fce1b98b812a24bf8d05.png);
+.kollor {
+  background-color: rgba(10, 41, 10, 0.973) !important;
 }
 
 .combined-effect {
@@ -18,6 +18,12 @@ body {
 .combined-effect:hover {
   color: black; /* Change to the desired color */
   transform: scale(1.3); /* Change to the desired scale factor */
+}
+.show {
+  background-color: rgba(50, 190, 32, 0.459);
+}
+.btn-close {
+  background-color: #7e052342;
 }
 
 .glow {
@@ -77,28 +83,36 @@ body {
 }
 .share {
   border-radius: 10px;
-  height: 65px;
+  height: 65vw;
   background-color: rgb(27, 26, 26);
-  width: 75%;
+  width: 74vw;
   margin: auto;
-  padding: auto;
-  margin-top: 24px;
-  padding-top: 7px;
+  padding-bottom: 0.6vw;
+  margin-top: 1.1vw;
+  padding-top: 0.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.box {
-  border: 1px solid green;
-}
+
 .line {
+  min-height: 4vw;
   border-left: 2px solid rgb(221, 218, 14);
-  border-radius: px;
-  margin-left: 1%;
+  border-radius: 0.2vw;
+  background-color: rgb(221, 218, 14);
+  margin-left: 1vw;
+  margin-right: 60vw;
+}
+.warpp {
+  margin-left: -59vw !important;
 }
 .nl {
   color: yellow !important;
-  margin-left: 10%;
+  font-weight: 900 !important;
 }
 .nl1 {
   color: white;
+  margin-right: 1vw;
 }
 .luffyquality {
   filter: blur(1.7px) brightness(77%) contrast(110%) saturate(110%) sepia(10%);
@@ -124,10 +138,55 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #0e0d0d; /* color of the scrollbar thumb */
+  background-color: #1c033d; /* color of the scrollbar thumb */
   border-radius: 70%; /* roundness of the scrollbar thumb */
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #0d3b04; /* color of the scrollbar track */
+  background-color: #2fcc0f; /* color of the scrollbar track */
+}
+.bestsite {
+  border-radius: 10px;
+  /* height: 65vw; */
+  background-color: rgb(27, 26, 26);
+  width: 74vw;
+  margin: auto;
+  padding-bottom: 0.6vw;
+  margin-top: 1.1vw;
+  padding-top: 0.5vw;
+  margin-bottom: 0.7vw;
+  padding-bottom: 0.7vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pormo p {
+  color: yellow;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.b {
+  /* border: 1px solid green; */
+  padding: 0.5vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  text-align: left;
+}
+.b1 {
+  color: rgb(47, 145, 145);
+}
+.b1:hover {
+  color: #2fcc0f;
+}
+.b2:hover {
+  color: #e69a68;
+}
+.b3 {
+  color: aquamarine;
+}
+.b3:hover{
+  color: royalblue;
+}
+.c {
+  border: 1vw solid red;
 }
