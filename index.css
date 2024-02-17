@@ -1,14 +1,16 @@
 body {
   background-color: #ffb2ec !important;
+  background-image: linear-gradient(to right, #490c0c, #0059ff);
+
   font-family: "Poppins", Arial;
 }
 
 .navcolorchange {
-  background-color: rgba(13, 43, 13, 0.87) !important;
+  background: linear-gradient(50deg, #1a4353, #97830eee);
   height: 80px;
 }
 .kollor {
-  background-color: rgba(10, 41, 10, 0.973) !important;
+  background: linear-gradient(-45deg, #11474e, #3c5305);
 }
 
 .combined-effect {
@@ -20,10 +22,20 @@ body {
   transform: scale(1.3); /* Change to the desired scale factor */
 }
 .show {
-  background-color: rgba(50, 190, 32, 0.459);
+  background: linear-gradient(45deg, #161616, #16168f);
+  margin: 0.3vw !important;
+  border-bottom-left-radius: 90vw;
+  border: none;
 }
+.gradient-text {
+  background-image: linear-gradient(to right, #ff0000, #00ff9d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .btn-close {
-  background-color: #7e052342;
+  background-color: #7e0523fa;
 }
 
 .glow {
@@ -138,12 +150,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #1c033d; /* color of the scrollbar thumb */
+  background-image: repeating-linear-gradient(to left, rgb(26, 25, 25), rgb(0, 0, 0));
   border-radius: 70%; /* roundness of the scrollbar thumb */
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #2fcc0f; /* color of the scrollbar track */
+  background: linear-gradient(45deg, #67c26e, #1a4353);
 }
 .bestsite {
   border-radius: 10px;
@@ -184,9 +196,38 @@ body::-webkit-scrollbar-track {
 .b3 {
   color: aquamarine;
 }
-.b3:hover{
+.b3:hover {
   color: royalblue;
 }
 .c {
   border: 1vw solid red;
+}
+.buttonOnLast {
+  padding: 0.7vw;
+  margin: 1.3vw;
+}
+.EndingLine {
+  padding: 0.7vw;
+  margin: 1.3vw;
+}
+
+.background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  filter: contrast(90%) brightness(50%) saturate(110%);
+}
+.controlpadding {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+.card-body{
+  background-image: linear-gradient(to right, #d6e419, #ff0077);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent; /* Hide the original text color */
 }
