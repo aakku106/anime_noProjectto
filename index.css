@@ -47,13 +47,13 @@ body {
 .btn-close {
   background-color: wheat;
   padding: 1.5vw !important;
-  box-shadow: -2px -1px 10px rgb(255, 0, 85);
+  box-shadow: -2px -1px 10px #ff0055;
   width: 3vw;
 }
 .btn-close:hover {
   background-color: wheat;
   padding: 1.6vw !important;
-  box-shadow: -5px -3px 15px rgb(243, 5, 144);
+  box-shadow: -5px -3px 15px #f30590;
   margin-right: 0.1vw;
   width: 3.3vw;
 }

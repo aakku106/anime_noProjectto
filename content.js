@@ -1,8 +1,8 @@
 window.addEventListener("DOMContentLoaded", (event) => {
   document.getElementById("blackHole").style.display = "block";
-
   setTimeout(() => {
     document.getElementById("blackHole").style.display = "none";
+    document.body.style.overflow = "auto";
   }, 1690);
 });
 function blinkNavbarArtLink() {

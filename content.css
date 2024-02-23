@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(45deg, #dfd765, #133799);
+  overflow: hidden;
 }
 #blackHole {
   position: fixed;
@@ -8,10 +9,10 @@ body {
   width: 100dvw;
   height: 100dvh;
   object-fit: cover;
-  z-index: 9999; /* Make sure it appears on top of other content */
+  z-index: 106;
   overflow: hidden;
-  filter: blur(0.5px) brightness(60%) contrast(100%) saturate(990%);
-  filter: drop-shadow(2px 2px 4px rgb(255, 0, 0));
+  filter: blur(0.2px) brightness(200%) contrast(200%)
+    drop-shadow(2px 2px 400px #b61919);
 }
 #space {
   margin-top: 7px;
@@ -71,4 +72,44 @@ body {
   background: linear-gradient(360deg, #c5b452, #c98b45);
   border: none;
   box-shadow: 0px 0px 20px #11474e;
+}
+/* Scroll bar styling */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: radial-gradient(#8599f3, #001c99);
+  border-radius: 70%;
+}
+
+body::-webkit-scrollbar-track {
+  background: radial-gradient(#07434b, #99041d);
+}
+.kolorella {
+  background: linear-gradient(0deg, #3a3939, #030303, #3a3939);
+  box-shadow: 0px 20px 100px #030303 !important;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+.kolorella:hover {
+  background: linear-gradient(0deg, #c4b98c, #9e9c39, #be8e08);
+  box-shadow: 0px 0px 69px #f0e79b !important;
+  border: none;
+}
+.redling {
+  background: linear-gradient(0deg, #00000077, #fab70086, #00000069);
+  transition: background 0.5s ease;
+}
+.redling:hover {
+  background: linear-gradient(0deg, #00000077, #0ec9b986, #00000069);
+}
+.hiding {
+  background: bisque;
+  transition: background 0.5s ease;
+}
+.hiding :hover {
+  background: linear-gradient(0deg, #00000077, #0fb4334b, #00000069);
+}
+.hiding:hover + .redling {
+  background: linear-gradient(0deg, #e68e0a77, #dd0d0d86, #cc7c1269), #134ece83;
 }
