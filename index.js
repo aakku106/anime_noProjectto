@@ -35,7 +35,7 @@ function blinkNavbarArtLink() {
   // Add a class to initiate the blinking effect
   navArtLink.classList.add("blink");
 
-  // Remove the class after a delay (e.g., 500ms)
+  // Remove the class after a delay
   setTimeout(function () {
     navArtLink.classList.remove("blink");
   }, 5069);
@@ -50,11 +50,11 @@ document.querySelector(".buttonOnLast").addEventListener("click", function () {
   // Shrink the button by reducing its padding
   this.style.padding = "0.1vw";
 
-  // Apply the fading effect by adding a class
+  // fading effect by adding a class
   this.classList.add("clicked");
 
   // Set a delay before redirecting the page
   setTimeout(() => {
-    window.location.href = "http://127.0.0.1:5500/content.html";
-  }, 3000); // Adjust the delay time as needed (3000 milliseconds = 3 seconds)
+    window.location.href = "./content.html";
+  }, 3000); 
 });
