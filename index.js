@@ -55,6 +55,6 @@ document.querySelector(".buttonOnLast").addEventListener("click", function () {
 
   // Set a delay before redirecting the page
   setTimeout(() => {
-    window.location.href = "./content.html";
+    window.location.href = "content.html";
   }, 3000); 
 });
