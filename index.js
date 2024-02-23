@@ -40,3 +40,21 @@ function blinkNavbarArtLink() {
     navArtLink.classList.remove("blink");
   }, 5069);
 }
+//
+//
+// JavaScript
+document.querySelector(".buttonOnLast").addEventListener("click", function () {
+  // Move the button downward by changing its top margin
+  this.style.marginTop = "80px";
+
+  // Shrink the button by reducing its padding
+  this.style.padding = "0.1vw";
+
+  // Apply the fading effect by adding a class
+  this.classList.add("clicked");
+
+  // Set a delay before redirecting the page
+  setTimeout(() => {
+    window.location.href = "http://127.0.0.1:5500/content.html";
+  }, 3000); // Adjust the delay time as needed (3000 milliseconds = 3 seconds)
+});

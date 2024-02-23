@@ -252,3 +252,60 @@ body::-webkit-scrollbar-track {
   background-clip: text;
   color: transparent; /* Hide the original text color */
 }
+.rapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 10vw;
+  z-index: 100;
+  margin: auto;
+}
+
+.blackhole {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18vw;
+  height: 15vw;
+  z-index: -1;
+  opacity: 0.5;
+  filter: contrast(110%) brightness(90%) saturate(190%);
+}
+
+.buttonOnLast {
+  position: -ms-page;
+  padding: 0.7vw;
+  margin: 1.3vw;
+  transition: margin 3s ease-in-out, padding 3s ease-in-out,
+    opacity 3s ease-in-out;
+    margin-left: 4vw;
+    width: 10vw;
+}
+
+.buttonOnLast.clicked {
+  opacity: 0;
+}
+.glow {
+  position: sticky;
+}
+.bgbg {
+  position: relative;
+}
+.cooooolor {
+  background: linear-gradient(45deg, #67c26f, #1a4353);
+}
+.cooooolor:hover {
+  background: linear-gradient(50deg, #274e2a, #388eaf);
+  box-shadow: 1px 1px 6px #0059ff;
+}
+.coooooloor {
+  box-shadow: 0px 0px 20px #11474e;
+  background-image: linear-gradient(to right, #d6e419, #ff0077);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: color 0.4s ease-in-out;
+  color: transparent;
+}
+/* .tuuudel{
+  padding-bottom: 10vw;
+} */

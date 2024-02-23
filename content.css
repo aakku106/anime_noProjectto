@@ -1,6 +1,18 @@
 body {
   background: linear-gradient(45deg, #dfd765, #133799);
 }
+#blackHole {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
+  z-index: 9999; /* Make sure it appears on top of other content */
+  overflow: hidden;
+  filter: blur(0.5px) brightness(60%) contrast(100%) saturate(990%);
+  filter: drop-shadow(2px 2px 4px rgb(255, 0, 0));
+}
 #space {
   margin-top: 7px;
   background-color: #dfd765 !important ;
@@ -10,19 +22,19 @@ body {
     opacity: 1;
     color: blue;
     box-shadow: 1px 1px 40px red;
-    background: radial-gradient(rgba(255, 0, 0, 0.651), rgba(255, 255, 0, 0.438));
+    background: radial-gradient(#ff0000a6, #ffff0070);
   }
   50% {
     opacity: 0;
     color: red;
     box-shadow: 1px 1px 40px yellow;
-    background: radial-gradient(black, rgba(128, 0, 128, 0.493));
+    background: radial-gradient(black, #8000807e);
   }
   100% {
     opacity: 1;
     color: yellow;
     box-shadow: 1px 1px 40px blueviolet;
-    background: radial-gradient(rgba(0rgb(94, 255, 0) 255, 0.459), pink);
+    background: radial-gradient(#00e1ff77, pink);
   }
 }
 

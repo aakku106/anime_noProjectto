@@ -1,10 +1,15 @@
+window.addEventListener("DOMContentLoaded", (event) => {
+  document.getElementById("blackHole").style.display = "block";
+
+  setTimeout(() => {
+    document.getElementById("blackHole").style.display = "none";
+  }, 1690);
+});
 function blinkNavbarArtLink() {
   var navArtLink = document.getElementById("navArtLink");
 
-  // Add a class to initiate the blinking effect
   navArtLink.classList.add("blink");
 
- 
   setTimeout(function () {
     navArtLink.classList.remove("blink");
   }, 5000);
